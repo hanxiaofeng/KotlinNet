@@ -59,4 +59,5 @@ freeline_project_description.json
 .idea
 /gradle
 /.gitignore
-/.idea/
+
+
