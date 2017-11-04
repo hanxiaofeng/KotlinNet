@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.content.ContextCompat
+import com.wangkeke.kotlinnet.fragment.GirlFragment
+import com.wangkeke.kotlinnet.fragment.TabContentFragment
 import kotlinx.android.synthetic.main.activity_tab_layout.*
 import java.util.ArrayList
 
@@ -15,7 +17,7 @@ import java.util.ArrayList
  */
 class TabLayoutActivity : AppCompatActivity() {
 
-    private val tabAll= arrayOf("福利","Android","IOS","休息视频","拓展资源","前端","全部")
+    private val tabAll= arrayOf("福利","Android","IOS","拓展资源","前端")
 
     var tabFragments:java.util.ArrayList<Fragment>? =null
 
@@ -47,7 +49,7 @@ class TabLayoutActivity : AppCompatActivity() {
             }
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                vp_content.setCurrentItem(tab!!.position,false)
+                vp_content.setCurrentItem(tab!!.position,true)
             }
 
 
@@ -67,9 +69,13 @@ class TabLayoutActivity : AppCompatActivity() {
 
         tabFragments = java.util.ArrayList()
 
-        for (item in tabIndicators!!)
+        for (i in tabIndicators!!.indices)
         {
-            tabFragments!!.add(TabContentFragment.newInstance(item,item))
+            if(i== 0){
+                tabFragments!!.add(GirlFragment.newInstance(""))
+            }else{
+                tabFragments!!.add(TabContentFragment.newInstance(tabIndicators!![i],tabIndicators!![i]))
+            }
         }
 
 
