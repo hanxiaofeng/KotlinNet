@@ -6,4 +6,4 @@ Kotlin,Retrofit,Rxjava网络请求实例，主要学习Kotlin基本语法以及�
 1.网络请求
 </font>
 
-![](https://github.com/hanxiaofeng/KotlinNet/master/gif/net.gif)
+![](https://github.com/hanxiaofeng/KotlinNet/blob/master/gif/net.gif?raw=true)
