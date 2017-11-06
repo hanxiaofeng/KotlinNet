@@ -20,7 +20,7 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
- * 福利
+ * 福利---网络请求
  */
 class GirlFragment : Fragment() ,GirlAdapter.OnItemClickListener{
 

@@ -52,8 +52,13 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
     implementation 'io.reactivex:rxandroid:1.2.1'
     implementation 'org.jetbrains.anko:anko:0.10.2'
+    //snackbar支持
+    implementation "org.jetbrains.anko:anko-design:0.10.2"
+    //alert cancel支持
+    implementation "org.jetbrains.anko:anko-commons:0.10.2"
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:cardview-v7:26.1.0'
     compile 'com.github.bumptech.glide:glide:3.6.1'
 }
+

@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.content.ContextCompat
+import com.wangkeke.kotlinnet.fragment.AnkoDialogFragment
 import com.wangkeke.kotlinnet.fragment.GirlFragment
 import com.wangkeke.kotlinnet.fragment.TabContentFragment
 import kotlinx.android.synthetic.main.activity_tab_layout.*
@@ -17,7 +18,7 @@ import java.util.ArrayList
  */
 class TabLayoutActivity : AppCompatActivity() {
 
-    private val tabAll= arrayOf("福利","Android","IOS","拓展资源","前端")
+    private val tabAll= arrayOf("福利","Anko-Dialogs","IOS","拓展资源","前端")
 
     var tabFragments:java.util.ArrayList<Fragment>? =null
 
@@ -71,10 +72,10 @@ class TabLayoutActivity : AppCompatActivity() {
 
         for (i in tabIndicators!!.indices)
         {
-            if(i== 0){
-                tabFragments!!.add(GirlFragment.newInstance(""))
-            }else{
-                tabFragments!!.add(TabContentFragment.newInstance(tabIndicators!![i],tabIndicators!![i]))
+            when (i) {
+                0 -> tabFragments!!.add(GirlFragment.newInstance(""))
+                1 -> tabFragments!!.add(AnkoDialogFragment.newInstance(""))
+                else -> tabFragments!!.add(TabContentFragment.newInstance(tabIndicators!![i],tabIndicators!![i]))
             }
         }
 
