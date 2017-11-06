@@ -7,3 +7,8 @@ Kotlin,Retrofit,Rxjava网络请求实例，主要学习Kotlin基本语法以及�
 </font>
 
 ![](https://github.com/hanxiaofeng/KotlinNet/blob/master/gif/net.gif?raw=true)
+
+2.anko dialog使用
+</font>
+
+![](https://github.com/hanxiaofeng/KotlinNet/blob/master/gif/dialog.gif?raw=true)
