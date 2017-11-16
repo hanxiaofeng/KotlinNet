@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.wangkeke.kotlinnet.Girl
+import com.wangkeke.kotlinnet.model.Girl
 import com.wangkeke.kotlinnet.R
 
 

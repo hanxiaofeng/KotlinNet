@@ -1,4 +1,4 @@
-package com.wangkeke.kotlinnet
+package com.wangkeke.kotlinnet.model
 
 /**
  * Created on 2017/11/3 14:57.
