@@ -42,7 +42,9 @@ class FragmentUI<T> : AnkoComponent<T> {
 
     override fun createView(ui: AnkoContext<T>) = with(ui) {
         verticalLayout {
-            val name = editText()
+            val name = editText{
+                hint = "我不是xml布局呦"
+            }
             button("Say Hello") {
                 onClick { ctx.toast("Hello, ${name.text}!") }
             }
