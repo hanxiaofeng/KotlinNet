@@ -16,7 +16,7 @@ import java.util.ArrayList
  */
 class TabLayoutActivity : AppCompatActivity() {
 
-    private val tabAll= arrayOf("福利","Anko-Dialogs","sqlite","intent-log","前端")
+    private val tabAll= arrayOf("福利","Anko-Dialogs","sqlite","intent-log","Anko-Layout")
 
     var tabFragments:java.util.ArrayList<Fragment>? =null
 
@@ -75,6 +75,7 @@ class TabLayoutActivity : AppCompatActivity() {
                 1 -> tabFragments!!.add(AnkoDialogFragment.newInstance(""))
                 2 -> tabFragments!!.add(SqliteFragment.newInstance(""))
                 3 -> tabFragments!!.add(IntentLogFragment.newInstance(""))
+                4 -> tabFragments!!.add(AnkoLayoutFragment.newInstance(""))
                 else -> tabFragments!!.add(TabContentFragment.newInstance(tabIndicators!![i],tabIndicators!![i]))
             }
         }
